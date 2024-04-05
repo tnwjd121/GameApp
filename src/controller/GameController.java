@@ -23,6 +23,7 @@ public class GameController {
 				break;
 			case 2:
 				// 게임정보 확인 함수
+				getGameList();
 				break;
 			case 3:
 				// 게임정보 수정 함수
@@ -40,6 +41,10 @@ public class GameController {
 	public void createGame(GameDto gameDto) {
 		gameDto = gameView.createGame();
 		gameService.createGame(gameDto);
+	}
+	
+	public void getGameList() {
+		gameView.getGameList(gameService.getGameList());
 	}
 
 }

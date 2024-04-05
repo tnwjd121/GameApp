@@ -1,7 +1,6 @@
 package main;
 
 import controller.GameController;
-import service.GameServiceImpl;
 
 public class GameApp {
 

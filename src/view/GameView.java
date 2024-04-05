@@ -1,5 +1,6 @@
 package view;
 
+import java.util.List;
 import java.util.Scanner;
 
 import dto.GameDto;
@@ -26,9 +27,9 @@ public class GameView {
 	public GameDto createGame() {
 		System.out.print("게임이름: ");
 		String gameName = scanner.nextLine();
-		System.out.println("콘솔명: ");
+		System.out.print("콘솔명: ");
 		String console = scanner.nextLine();
-		System.out.println("가격: ");
+		System.out.print("가격: ");
 		int price = scanner.nextInt();
 		scanner.nextLine();
 		
@@ -37,6 +38,13 @@ public class GameView {
 		
 		return gameDto;
 		
+	}
+	
+	public void getGameList(List<GameDto>gameDtos) {
+		System.out.println("----------게임 정보----------");
+		for(int i=0; i<gameDtos.size(); i++) {
+			System.out.println(gameDtos.toString());
+		}
 	}
 
 }
