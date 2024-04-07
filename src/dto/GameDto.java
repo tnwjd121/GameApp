@@ -6,6 +6,7 @@ public class GameDto {
 	private String gameName;
 	private String console;
 	private int price;
+	
 	public int getGameNumber() {
 		return gameNumber;
 	}
@@ -38,7 +39,7 @@ public class GameDto {
 	}
 	@Override
 	public String toString() {
-		return "GameDto [gameNumber=" + gameNumber + ", gameName=" + gameName + ", console=" + console + ", price="
+		return "게임 번호: " + gameNumber + ", 게임명: " + gameName + ", 콘솔명: " + console + ", 가격 : "
 				+ price + "]";
 	}
 	
