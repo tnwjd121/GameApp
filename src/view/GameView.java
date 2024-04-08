@@ -11,7 +11,6 @@ public class GameView {
 	
 	
 	Scanner scanner = new Scanner(System.in);
-	private int nextGameNumber = 0; // 다음 등록 번호
 	private GameService gameService;
 	
 	public GameView(GameService gameService) {
